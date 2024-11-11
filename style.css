@@ -12,35 +12,9 @@ body{
 	z-index:99999;
 	background-color: white;
 }
-/* .ball{
-	height: 50px;
-	width: 50px;
-	background-color: black;
-	box-shadow: 1px 0px 15px 6px #33FF99;
-	border-radius: 50%;
-	animation-name: example;
-	animation-duration:4s;
-	animation-iteration-count: 3;
-}
-@keyframes example{
-	0%{
-		transform: rotateX(150deg);
-	}
-	50%{
-		transform: rotateY(260deg);
-	}
-	100%{
-		transform: rotateZ(360deg);
-	}
-} */
 .hide{
 	display: none;
 }
-/* .nav1{
-	background:black;
-	position:fixed;
-	z-index: 99999;
-} */
 #list{
 	color: white;
 }
