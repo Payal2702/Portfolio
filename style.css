@@ -8,11 +8,11 @@ body{
 	justify-content: center;
 	align-items: center;
 	gap: 20px;
-	position: fixed;
-	z-index: 5000;
+	position:fixed;
+	z-index:99999;
 	background-color: white;
 }
-.ball{
+/* .ball{
 	height: 50px;
 	width: 50px;
 	background-color: black;
@@ -20,7 +20,6 @@ body{
 	border-radius: 50%;
 	animation-name: example;
 	animation-duration:4s;
-	/* animation-delay: ; */
 	animation-iteration-count: 3;
 }
 @keyframes example{
@@ -33,7 +32,7 @@ body{
 	100%{
 		transform: rotateZ(360deg);
 	}
-}
+} */
 .hide{
 	display: none;
 }
@@ -276,16 +275,16 @@ a{
 .brands-grid.separator-border.separator-border-light > .row > *:before {
   border-left: 1px dotted rgba(250, 250, 250, 0.15);
 }
-.portfolio .portfolio-box {
+ .portfolio-box {
 	position: relative;
   }
   
-  .portfolio .portfolio-box .portfolio-img {
+.portfolio-box .portfolio-img {
 	position: relative;
 	overflow: hidden;
   }
   
-  .portfolio .portfolio-box .portfolio-overlay {
+   .portfolio-box .portfolio-overlay {
 	text-align: center;
 	display: flex;
 	position: absolute;
@@ -299,23 +298,23 @@ a{
 	cursor: pointer;
   }
   
-  .portfolio .portfolio-box:hover .portfolio-overlay {
+ .portfolio-box:hover .portfolio-overlay {
 	opacity: 1;
   }
-  .portfolio .portfolio-box:hover .portfolio-img img {
+   .portfolio-box:hover .portfolio-img img {
 	-webkit-filter: blur(2px);
 	filter: blur(2px);
 	-webkit-transform: scale(1.03);
 	transform: scale(1.03);
   }
   
-  .portfolio .portfolio-box .portfolio-overlay-details {
+ .portfolio-box .portfolio-overlay-details {
 	width: 100%;
 	margin-top: auto;
 	margin-bottom: auto;
   }
   
-  .portfolio .portfolio-details {
+ .portfolio-details {
 	padding: 1.5rem 0;
 	text-align: center;
   }
@@ -327,4 +326,17 @@ a{
 	font-size: 1rem;
 	line-height: 1.8;
   }
-
+  .loader {
+	color: #000;
+	width: 4px;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	box-shadow: 19px 0 0 7px, 38px 0 0 3px, 57px 0 0 0;
+	transform: translateX(-38px);
+	animation: l21 .5s infinite alternate linear;
+  }
+  
+  @keyframes l21 {
+	50%  {box-shadow: 19px 0 0 3px, 38px 0 0 7px, 57px 0 0 3px}
+	100% {box-shadow: 19px 0 0 0  , 38px 0 0 3px, 57px 0 0 7px}
+  }
